@@ -35,6 +35,20 @@ function getExchange(id) {
     .then(res => res.json())
     .then(res => res.data)
 }
+// Con Async-Await
+
+// const getMarkets = async coin => {
+//   let res = await fetch(`${url}/assets/${coin}/markets?limit=5`);
+//   res = await res.json();
+//   return res.data;
+// };
+
+// const getExchange = async id => {
+//   let res = await fetch(`${url}/exchanges/${id}`);
+//   res = await res.json();
+
+//   return res.data;
+// };
 
 export default {
   getAssets,

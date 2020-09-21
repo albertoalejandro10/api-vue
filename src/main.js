@@ -4,10 +4,12 @@ import '@/assets/css/tailwind.css'
 import Chart from 'chart.js'
 import Chartkick from 'vue-chartkick'
 import { VueSpinners } from '@saeris/vue-spinners'
+import VueLazyload from 'vue-lazyload'
 
 import router from '@/router'
 import { dollarFilter, percentFilter } from '@/filters'
 
+Vue.use(VueLazyload)
 Vue.use(VueSpinners)
 Vue.use(Chartkick.use(Chart))
 Vue.filter('dollar', dollarFilter)
